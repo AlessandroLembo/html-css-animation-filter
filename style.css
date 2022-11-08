@@ -112,17 +112,27 @@
 
 .ex-11-icon {
     font-size: 60px;
-    animation: spin 2s linear alternate-reverse; 
 }
 
-@keyframes spin{
+.ex-11-icon:hover{
+    animation: spin 3s linear;
+
+}
+
+@keyframes spin {
+
     0%{
-        transform: rotate(270deg);
+        transform: rotate(0deg);
     }
 
     75%{
-        transform: rotate(0deg);
+        transform: rotate(270deg);
     }
+
+    100%{
+        transform: rotate(0deg);
+}
+
 }
 
 
