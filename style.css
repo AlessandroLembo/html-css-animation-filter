@@ -47,7 +47,7 @@
     width: 60px;
     height: 60px;
     background: red;
-    transition: transform 3s linear 5s;
+    transition: transform 2s linear 3s;
 }
 
 .ex-5-square:hover{
@@ -112,7 +112,20 @@
 
 .ex-11-icon {
     font-size: 60px;
+    animation: spin 2s linear alternate-reverse; 
 }
+
+@keyframes spin{
+    0%{
+        transform: rotate(270deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
